@@ -5,23 +5,23 @@ namespace dotnet_basics.Controllers;
 public class HomeController:Controller //Controller daki özelliklerin HomeController a geçmesini sağladık.
 {
     //localhost:5052/home/index      localhost:5052/ 
-    public string Index()
+    public ActionResult Index()
     {
-        return "home/index veya home/ sayfası";
+        return View();   //  View/Home/Index.cshtml
     }
     
 
 
 
 //localhost:5052/home/about
-    public string About()
+    public ActionResult About()  //View/Home/About.cshtml
     {
-        return "about sayfasıyım";
+        return View();
     }
 
 //localhost:5052/home/contact
-    public string Contact()
+    public ActionResult Contact()   //View/Home/Contact.cshtml
     {
-        return "ben contact sayfasıyım";
+        return View();
     }
 }

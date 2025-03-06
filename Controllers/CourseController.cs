@@ -6,23 +6,23 @@ namespace dotnet_basics.Controllers;
     {
         //localhost:5052/course
         //localhost:5052/course/index
-        public string  Index()  //Index axtion methodu default olarak çağırılan bir methoddurprogram.cs içinde {action=Index} derken default olarak ındex olur
+        public ActionResult  Index()  //Index axtion methodu default olarak çağırılan bir methoddurprogram.cs içinde {action=Index} derken default olarak ındex olur
         {
-            return "course/Index  veya  course/  sayfası";
+            return View();
         }
 
         
         //localhost:5052/course/list
 
-        public string  List()
+        public ActionResult  List()
         {
-            return "ben list sayfasıyım";
+            return View();
         }
         
 
         //localhost:5052/course/details
-        public string  Details()
+        public ActionResult  Details()
         {
-            return "ben Details sayfasıyım";
+            return View();
         }
     }

@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\melik\\dotnet-basics\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\dotnet-basics.bundle.scp.css",
-      "PackagePath": "staticwebassets\\dotnet-basics.6n1ze8k8ql.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
