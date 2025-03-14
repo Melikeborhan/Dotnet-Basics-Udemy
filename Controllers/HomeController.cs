@@ -2,25 +2,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_basics.Controllers;
 
-public class HomeController:Controller //Controller daki özelliklerin HomeController a geçmesini sağladık.
+public class HomeController:Controller 
 {
-    //localhost:5052/home/index      localhost:5052/ 
+    
     public ActionResult Index()
     {
-        return View();   //  View/Home/Index.cshtml
+        int sayi1 = 10;
+        int sayi2 = 20;
+
+        int toplam = sayi1 + sayi2;
+
+        ViewData["Toplam"] = toplam; //Toplam key toplam value değeridir Diğer index kısmında bu değeri göstermek için Toplam keyini kullanırız kullanıyoruz.
+        return View();   
     }
     
 
-
-
-//localhost:5052/home/about
-    public ActionResult About()  //View/Home/About.cshtml
+    public ActionResult About()  
     {
         return View();
     }
 
-//localhost:5052/home/contact
-    public ActionResult Contact()   //View/Home/Contact.cshtml
+
+    public ActionResult Contact()   
     {
         return View();
     }
