@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\Redmi-Note-12-Mavi-1.jpg",
+      "PackagePath": "staticwebassets\\img\\Redmi-Note-12-Mavi-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\course-img-1.jpg",
       "PackagePath": "staticwebassets\\img\\course-img-1.jpg"
     },
@@ -23,6 +27,26 @@
     {
       "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\course-img-4.jpg",
       "PackagePath": "staticwebassets\\img\\course-img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\tel-1.jpg",
+      "PackagePath": "staticwebassets\\img\\tel-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\tel-2.jpg",
+      "PackagePath": "staticwebassets\\img\\tel-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\tel-3.jpg",
+      "PackagePath": "staticwebassets\\img\\tel-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\tel-4.jpg",
+      "PackagePath": "staticwebassets\\img\\tel-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\img\\tel-5.jpg",
+      "PackagePath": "staticwebassets\\img\\tel-5.jpg"
     },
     {
       "Id": "C:\\Users\\melik\\dotnet-basics\\wwwroot\\js\\site.js",
