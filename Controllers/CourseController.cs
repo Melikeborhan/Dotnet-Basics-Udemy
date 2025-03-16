@@ -16,6 +16,49 @@ namespace dotnet_basics.Controllers;
 
         public ActionResult  List()
         {
+
+            //AYRI AYRI TANIMLAMA
+            // string courseName1 = "js kursu";
+            // string courseName2 = "React kursu";
+            // string courseImage1 = "1.jpg";
+            //string courseImage2 = "2.jpg";
+
+
+
+            // string courseDetail1 = "js kursu açıklama";
+            // string courseDetail2 = "React kursu açıklama";
+
+
+
+
+            //DİZİ OLUŞTURARAK TANIMLAMA
+
+            string[] courseNames = ["js kursu","React kursu"];
+            string[] courseDetails = ["js kursu açıklama","React kursu açıklama"];
+            string[] courseImages = ["course-img-1.jpg","course-img-2.jpg"];
+
+
+
+            //DİZİ ELEMANLARINA ERİŞİM
+            ViewData["courseName1"] = courseNames[0]; //js kursu
+            ViewData["courseName2"] = courseNames[1]; //React kursu
+
+            ViewData["courseDetail1"] = courseDetails[0]; //js kursu açıklama
+            ViewData["courseDetail2"] = courseDetails[1]; //React kursu açıklama
+
+            ViewData["courseImage1"] = courseImages[0];//course-img-1.jpg
+            ViewData["courseImage2"] = courseImages[1];//course-img-2.jpg
+
+
+
+            
+            
+
+
+
+
+
+
             return View();
         }
         
