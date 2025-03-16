@@ -1,35 +1,9 @@
-@model string[] //bu sekılde gelen strıng dızıyı karsılamıs  olduk 
-
-<p>
-    @* burada Detail dızıyı ıcındekı elemanları model ustunden goruntulemı oluruz. *@
-    @Model[0]  <br>
-    @Model[1]
-</p>
+@model Course; //bu kısımda Course tanıdı çünkü _ViewImport  sayfasında otamatık olarak gelen @using dotnet_basics.Models  sayesınde bunu yapmıs oldu
 
 
 <p>
-    @ViewData["courseTime"]
+    @Model.Title
 </p>
-
-
-
-
-@* @model bool *@
-@* courseIsOnline bool veri türü olarak geldıgı için onu karsılayan verı turu  bool olmak zorundadır  *@
-
-
-
-@* @model int *@
-@* saat int veri türü olarak geldıgı için onu karsılayan verı turu date int olmak zorundadır *@
-
-
-
-@* @model string  //string beklıyor demektir string gelen verının karsılanması gereklı *@
-@* @model string *@
-
-<h1>Course/Detail</h1>
-
-@* <p> 
-    @Model 
-            @* coursecontrollerdan gelen model bılgısıne karsılık gelıyor bu kısımda gelen objeye bakmış oluyorsunuz 
-</p> *@
+<p>
+    @Model.Image
+</p>

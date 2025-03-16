@@ -1,6 +1,9 @@
+using dotnet_basics.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_basics.Controllers;
+
+
 
     public class CourseController : Controller
     {
@@ -66,30 +69,12 @@ namespace dotnet_basics.Controllers;
         //localhost:5052/course/details
         public ActionResult  Details()
         {
-            // string courseName = "Django kursu";
-
-             int courseTime = 40;
-
-            // bool courseIsOnline  = true;
-
-            //bu sekılde dızı ıcıne alarak model kısmında su sekılde cagırırız:@Model[0]
-            string[] courseNames = ["js kursu","React kursu"];
-
-            //ya da bunu da ekleyerek model kısmında su sekılde cagırabılırız:@ViewData["courseTime"]
-            ViewData["courseTime"] = courseTime;
-            return View(courseTime);
+            Course kurs1 = new Course(); //kurs1 nesnesı tanımladık
+            
+            kurs1.Title = "Django kursu";
+            kurs1.Image = "1.jpg";
 
 
-            //return View("Details", courseName); //burada 2. parametrede belırtmemız gereklı Details adındaki cshtml sayfasına courseName  ısmınde bır tane string (obje)model gonderıyor demiş oluruz.
-
-            // return View(courseTime); //burada modeli int olarak tanımladığımız için direkt  1. parametreden göndermemiz yeterlidir
-        
-            // return View(courseIsOnline);
-
-            //return View(courseNames);
-
-        
-        
-        
+            return View(kurs1);
         }
     }
