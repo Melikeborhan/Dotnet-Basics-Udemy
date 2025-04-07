@@ -7,6 +7,7 @@
 <div class="row">
 @foreach(Course kurs in Model)
 {
+    @if(kurs.IsActive){
     <div class="col">
         <div class="card">
             <img src="~/img/@kurs.Image" class="card-img-top" alt="">
@@ -16,4 +17,5 @@
             </div>
         </div>
     </div>
+    }
 }

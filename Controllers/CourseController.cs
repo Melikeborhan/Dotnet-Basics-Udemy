@@ -42,12 +42,14 @@ namespace dotnet_basics.Controllers;
                 new Course
                 {
                     Title = "Javascript kursu",
-                    Image = "tel-1.jpg"
+                    Image = "tel-1.jpg",
+                    IsActive = true
                 },
                 new Course
                 {
                     Title = "React kursu",
-                    Image = "tel-2.jpg"
+                    Image = "tel-2.jpg",
+                    IsActive = false
                 }
             };
 
@@ -65,6 +67,7 @@ namespace dotnet_basics.Controllers;
             
             kurs1.Title = "Django kursu";
             kurs1.Image = "1.jpg";
+            kurs1.IsActive = true;
 
 
             return View(kurs1);
