@@ -11,7 +11,25 @@ namespace dotnet_basics.Controllers;
         //localhost:5052/course/index
         public ActionResult  Index()  //Index axtion methodu default olarak çağırılan bir methoddurprogram.cs içinde {action=Index} derken default olarak ındex olur
         {
-            return View();
+            List<Course> kurslar = new List<Course>{
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = false
+                }
+            };
+
+
+
+
+            return View(kurslar);
         }
 
         
