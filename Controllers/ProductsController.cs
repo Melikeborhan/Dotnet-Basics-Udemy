@@ -11,7 +11,23 @@ namespace dotnet_basics.Controllers;
         }
 
         public ActionResult List(){
-            return View();
+             List<Product> urunler = new List<Product>{
+            new Product{
+                productName = "Samsung S24 Ultra",
+                productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM",
+                productPrice = 70000,
+                productImage = "tel-1.jpg",
+                productIsStock = true
+            },
+            new Product{
+                productName = "Iphone 14 Pro",
+                productDetail = "Iphone 14 Pro 512 GB SSD 16 GB RAM",
+                productPrice = 120000,
+                productImage = "tel-2.jpg",
+                productIsStock = true
+            },
+        };
+            return View(urunler);
         }
 
         public ActionResult Details(){
