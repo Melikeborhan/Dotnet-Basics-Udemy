@@ -1,3 +1,4 @@
+using dotnet_basics.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_basics.Controllers;
@@ -15,27 +16,16 @@ namespace dotnet_basics.Controllers;
 
         public ActionResult Details(){
 
-            //Samsung S24 Ultra
-            //Samsung S24 Ultra 512 GB SSD 16 GB RAM
-            //70.000 TL
-            //tel-1.jpg
+        Product product1 = new Product();
 
-            string productName = "Samsung S24 Ultra";
-            string productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM";
-            double productPrice =  70000 ;
-            string productImage = "tel-1.jpg";
-            bool  productIsStock = true;
-
-
-            ViewData["ProductName"] = productName;
-            ViewData["ProductDetail"] = productDetail;
-            ViewData["ProductPrice"] = productPrice;
-            ViewData["ProductImage"] = productImage;
-            ViewData["ProductIsStock"] = productIsStock;
-
-
-
-            return View();
+        product1.productName = "Samsung S24 Ultra";
+        product1.productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM";
+        product1.productPrice = 70000;
+        product1.productImage = "tel-1.jpg";
+        product1.productIsStock = true;
+  
+        
+        return View(product1);
         }
 
         public ActionResult Update(){

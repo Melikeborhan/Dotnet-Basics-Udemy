@@ -19,50 +19,42 @@ namespace dotnet_basics.Controllers;
 
         public ActionResult  List()
         {
+            // Course kurs1 = new Course();
 
-            //AYRI AYRI TANIMLAMA
-            // string courseName1 = "js kursu";
-            // string courseName2 = "React kursu";
-            // string courseImage1 = "1.jpg";
-            //string courseImage2 = "2.jpg";
+            // kurs1.Title = "Javascript kursu";
+            // kurs1.Image = "tel-1.jpg";
 
-
-
-            // string courseDetail1 = "js kursu açıklama";
-            // string courseDetail2 = "React kursu açıklama";
+            // Course kurs2 = new Course();
+            // kurs2.Title = "React kursu";
+            // kurs2.Image = "tel-2.jpg";
 
 
+            // //Course[] kurslar = [kurs1,kurs2];
 
-
-            //DİZİ OLUŞTURARAK TANIMLAMA
-
-            string[] courseNames = ["js kursu","React kursu"];
-            string[] courseDetails = ["js kursu açıklama","React kursu açıklama"];
-            string[] courseImages = ["course-img-1.jpg","course-img-2.jpg"];
+            // List<Course> kurslar = new List<Course>{
+            //     kurs1,kurs2
+            // }; //List kurslar adında bir liste tanımladık
 
 
 
-            //DİZİ ELEMANLARINA ERİŞİM
-            ViewData["courseName1"] = courseNames[0]; //js kursu
-            ViewData["courseName2"] = courseNames[1]; //React kursu
-
-            ViewData["courseDetail1"] = courseDetails[0]; //js kursu açıklama
-            ViewData["courseDetail2"] = courseDetails[1]; //React kursu açıklama
-
-            ViewData["courseImage1"] = courseImages[0];//course-img-1.jpg
-            ViewData["courseImage2"] = courseImages[1];//course-img-2.jpg
-
-
-
-            
-            
+            //yukarıda uzun uzun yazmak yerıne su yontemle de yazılabılır
+            List<Course> kurslar = new List<Course>{
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg"
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg"
+                }
+            };
 
 
 
 
-
-
-            return View();
+            return View(kurslar);
         }
         
 

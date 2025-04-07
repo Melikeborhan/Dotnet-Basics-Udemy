@@ -1,21 +1,22 @@
+@model Product
+
 <h1>Products/Details</h1>
 
 <div class="row">
     <div class="col-4">
-        <img src="~/img/@ViewData["ProductImage"]" alt="" class="img-fluid" />
-
+        <img src="~/img/@Model.productImage" alt="" class="img-fluid" />
     </div>
     <div class="col-8">
-            <h1>@ViewData["ProductName"]</h1>
-            <p>
-                @ViewData["ProductDetail"]
-            </p>
-            <p>
-                @ViewData["ProductPrice"]
-            </p>
-            <p>
-                @ViewData["ProductIsStock"]
-            </p>
+        <h1>@Model.productName</h1>
+        <p>
+            @Model.productDetail
+        </p>
+        <p>
+           @Model.productPrice
+        </p>
+        <p>
+         @Model.productIsStock
+        </p>
     </div>
 </div>
 
