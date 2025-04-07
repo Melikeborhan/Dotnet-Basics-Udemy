@@ -16,6 +16,12 @@
                     <div class="card-body">
                     <h5 class="card-title">@urun.productName</h5>
                     <p class="card-text">@urun.productDetail</p>
+
+                    @if(!urun.productIsStock)
+                    {
+                        <p class="text-danger text-sm">Satışta Değil</p>
+                    }
+
                     <button class="btn btn-primary btn-sm">Detail</button>
                     </div>
                 </div>

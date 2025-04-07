@@ -21,7 +21,7 @@ namespace dotnet_basics.Controllers;
                 productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM",
                 productPrice = 70000,
                 productImage = "tel-1.jpg",
-                productIsStock = true
+                productIsStock = false
             },
             new Product{
                 productName = "Iphone 14 Pro",
