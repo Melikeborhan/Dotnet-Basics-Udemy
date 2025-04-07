@@ -14,9 +14,22 @@
         <p>
            @Model.productPrice
         </p>
-        <p>
-         @Model.productIsStock
+       
+        @if(Model.productIsStock){
+            @if(Model.StockPieces > 0){
+
+        <p class="text-success text-sm">
+         Ürün Satışta
         </p>
+
+            }
+            else{
+                <p class="text-sm text-danger">Stok Yeterli Değil</p>
+            }
+        }
+        else{
+           <p class="text-sm text-danger">Ürün Satışta Değil</p>
+        }
     </div>
 </div>
 

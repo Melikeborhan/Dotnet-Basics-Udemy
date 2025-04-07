@@ -36,13 +36,14 @@ namespace dotnet_basics.Controllers;
 
         public ActionResult Details(){
 
-        Product product1 = new Product();
+        Product product1 = new();
 
         product1.productName = "Samsung S24 Ultra";
         product1.productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM";
         product1.productPrice = 70000;
         product1.productImage = "tel-1.jpg";
-        product1.productIsStock = true;
+        product1.productIsStock = false;
+        product1.StockPieces = 100;
   
         
         return View(product1);

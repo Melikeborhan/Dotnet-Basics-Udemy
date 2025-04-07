@@ -7,5 +7,7 @@ namespace dotnet_basics.Models;
         public double productPrice { get; set; }
         public string productImage { get; set; }
         public bool  productIsStock { get; set; }
+
+        public int StockPieces {get; set;}
         
     }
