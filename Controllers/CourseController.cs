@@ -7,11 +7,9 @@ namespace dotnet_basics.Controllers;
 
     public class CourseController : Controller
     {
-        //localhost:5052/course
-        //localhost:5052/course/index
-        public ActionResult  Index()  //Index axtion methodu default olarak çağırılan bir methoddurprogram.cs içinde {action=Index} derken default olarak ındex olur
-        {
-            List<Course> kurslar = new List<Course>{
+        
+        //listeyi tekrar tekrar yazmank yerıne Listeyi en üstten tanımladık böylece hepsinin erişimi sağlanmıs oldu
+        List<Course> kurslar = new List<Course>{
                 new Course
                 {
                     Title = "Javascript kursu",
@@ -26,8 +24,9 @@ namespace dotnet_basics.Controllers;
                 }
             };
 
-
-
+        public ActionResult  Index()  
+        {
+            
 
             return View(kurslar);
         }
@@ -37,39 +36,8 @@ namespace dotnet_basics.Controllers;
 
         public ActionResult  List()
         {
-            // Course kurs1 = new Course();
-
-            // kurs1.Title = "Javascript kursu";
-            // kurs1.Image = "tel-1.jpg";
-
-            // Course kurs2 = new Course();
-            // kurs2.Title = "React kursu";
-            // kurs2.Image = "tel-2.jpg";
-
-
-            // //Course[] kurslar = [kurs1,kurs2];
-
-            // List<Course> kurslar = new List<Course>{
-            //     kurs1,kurs2
-            // }; //List kurslar adında bir liste tanımladık
-
-
-
-            //yukarıda uzun uzun yazmak yerıne su yontemle de yazılabılır
-            List<Course> kurslar = new List<Course>{
-                new Course
-                {
-                    Title = "Javascript kursu",
-                    Image = "tel-1.jpg",
-                    IsActive = true
-                },
-                new Course
-                {
-                    Title = "React kursu",
-                    Image = "tel-2.jpg",
-                    IsActive = false
-                }
-            };
+            
+          
 
 
 
