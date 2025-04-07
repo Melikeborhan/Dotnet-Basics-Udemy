@@ -7,7 +7,11 @@ namespace dotnet_basics.Controllers;
     {
         //localhost:5052/home/index 
         public ActionResult Index(){
-            return View();
+
+            string[] kurslar = {"js kursu","react kursu"};
+
+
+            return View(kurslar);
         }
 
         public ActionResult List(){
