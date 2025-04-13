@@ -14,14 +14,81 @@ namespace dotnet_basics.Controllers;
                 {
                     Title = "Javascript kursu",
                     Image = "tel-1.jpg",
-                    IsActive = true
+                    IsActive = true,
+                    IsHome = true
                 },
                 new Course
                 {
                     Title = "React kursu",
                     Image = "tel-2.jpg",
-                    IsActive = false
-                }
+                    IsActive = true,
+                    IsHome = false                },
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true,
+                    IsHome = false
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = true,
+                    IsHome = true                },
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true,
+                    IsHome = true
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = true,
+                    IsHome = true                },
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true,
+                    IsHome = true
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = true,
+                    IsHome = false                },
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true,
+                    IsHome = true
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = true,
+                    IsHome = false               
+                     },
+                new Course
+                {
+                    Title = "Javascript kursu",
+                    Image = "tel-1.jpg",
+                    IsActive = true,
+                    IsHome = true
+                },
+                new Course
+                {
+                    Title = "React kursu",
+                    Image = "tel-2.jpg",
+                    IsActive = true,
+                    IsHome = false                }
             };
 
         public ActionResult  Index()  

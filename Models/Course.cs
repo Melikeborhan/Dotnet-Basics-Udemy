@@ -6,4 +6,5 @@ public class Course
     public string  Image { get; set; }  
 
     public bool  IsActive { get; set; }
+    public bool IsHome { get; set; }
 }
