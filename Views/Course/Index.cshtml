@@ -5,10 +5,6 @@
 
 <h1 class="mb-3">Kurslar</h1>
 <div class="row kurslar">
-    @* bu kısımda direkt course içinde _CourseCard dosyaya bakar bu doya shared içine de alabiliriz bu durumda yıne aynı sekılde yazarız*@
-    @* fakat farklı bır dosya ıcınde örneğin Home klasörü içine _CourseCard sayfasını koydugumuzda bunu su sekılde belırtmemız gerekır "~/Views/Home/_CourseCard.cshtml"*@
-    @* @await Html.PartialAsync("~/Views/Home/_CourseCard.cshtml") *@
-
 
     @foreach(Course course in Model){
     @await Html.PartialAsync("_CourseCard",course)  //dışarıya bır tane course objesi gönderiyoruz ve o course objesi _CourseCard sayfasında kullanılacak.  @* bu kısımda course modelini kullanıyoruz *@

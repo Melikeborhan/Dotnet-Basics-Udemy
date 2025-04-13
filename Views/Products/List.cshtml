@@ -1,14 +1,14 @@
 @model List<Product>
 
 <h1>Products/List</h1>
-
+<div class="container">
 <div class="row">
 
     @foreach(Product urun in Model)
     {
         @if(urun.productIsStock)
         {
-            <div class="col-6">
+            <div class="col-4">
             <div class="card mb-3">
                 <div class="col-md-4">
                     <img src="~/img/@urun.productImage" class="img-fluid rounded-start" >
@@ -32,4 +32,5 @@
 
     }
 
+</div>
 </div>

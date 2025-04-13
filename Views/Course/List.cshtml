@@ -5,17 +5,8 @@
 <h1>Course/List</h1>
 
 <div class="row">
-@foreach(Course kurs in Model)
-{
-    @if(kurs.IsActive){
-    <div class="col">
-        <div class="card">
-            <img src="~/img/@kurs.Image" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="cart-title">@kurs.Title</h5>
-                <a href="#" class="card-link">İncele</a>
-            </div>
-        </div>
-    </div>
-    }
-}
+@foreach(Course course in Model){
+    @await Html.PartialAsync("_CourseCard",course)   
+    } 
+</div>
+
