@@ -9,5 +9,7 @@ namespace dotnet_basics.Models;
         public bool  productIsStock { get; set; }
 
         public int StockPieces {get; set;}
+
+        public bool IsHome { get; set; }
         
     }
