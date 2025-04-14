@@ -1,9 +1,22 @@
-@model Course; //bu kısımda Course tanıdı çünkü _ViewImport  sayfasında otamatık olarak gelen @using dotnet_basics.Models  sayesınde bunu yapmıs oldu
+@model Course
 
 
-<p>
-    @Model.Title
-</p>
-<p>
-    @Model.Image
-</p>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6 col-lg-4">
+        <div class="card text-center">
+            <img src="~/img/@Model.Image" alt="@Model.Title" class="card-img-top img-fluid" />
+            <div class="card-body">
+                <h1 class="card-title">@Model.Title</h1>
+                <p class="card-text">@Model.Title</p>
+                <p class="card-text">
+                    <strong>Açıklama:</strong> Bu kurs hakkında daha fazla bilgi edinin.
+                </p>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolor!
+                </p>
+              
+            </div>
+        </div>
+    </div>
+</div>

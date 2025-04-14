@@ -6,6 +6,8 @@
     <div class="card-body ">
         <h5 class="card-title">@Model.Title</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, vitae!</p>
-        <a href="#" class="btn btn-secondary btn-lg ">İncele</a>
+        <a asp-controller="Course" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary btn-lg ">İncele</a>
+        @* bu sekılde de kullanılabılır *@
+        @* <a href="/Course/Details/@Model.Id" class="btn btn-secondary btn-lg ">İncele</a> *@
     </div>
 </div>
