@@ -7,6 +7,7 @@ namespace dotnet_basics.Controllers;
     {
          List<Product> urunler = new List<Product>{
             new Product{
+                productId = 1,
                 productName = "Samsung S24 Ultra",
                 productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM",
                 productPrice = 70000,
@@ -16,6 +17,7 @@ namespace dotnet_basics.Controllers;
                 
             },
             new Product{
+                productId = 2,
                 productName = "Iphone 14 Pro",
                 productDetail = "Iphone 14 Pro 512 GB SSD 16 GB RAM",
                 productPrice = 120000,
@@ -24,6 +26,7 @@ namespace dotnet_basics.Controllers;
                 IsHome = true
             },
             new Product{
+                productId = 3,
                 productName = "Google Pixel 7",
                 productDetail = "Google Pixel 7 128 GB SSD 8 GB RAM",
                 productPrice = 60000,
@@ -32,6 +35,7 @@ namespace dotnet_basics.Controllers;
                 IsHome = false
             },
             new Product{
+                productId = 4,
                 productName = "Xiaomi 13 Pro",
                 productDetail = "Xiaomi 13 Pro 256 GB SSD 12 GB RAM",
                 productPrice = 50000,
@@ -40,6 +44,7 @@ namespace dotnet_basics.Controllers;
                 IsHome = false
             },
             new Product{
+                productId = 5,
                 productName = "Oppo Find X5 Pro",
                 productDetail = "Oppo Find X5 Pro 256 GB SSD 12 GB RAM",
                 productPrice = 40000,
@@ -61,19 +66,12 @@ namespace dotnet_basics.Controllers;
             return View(urunler);
         }
 
-        public ActionResult Details(){
+        public ActionResult Details(int id){
 
-        Product product1 = new();
-
-        product1.productName = "Samsung S24 Ultra";
-        product1.productDetail = "Samsung S24 Ultra 512 GB SSD 16 GB RAM";
-        product1.productPrice = 70000;
-        product1.productImage = "tel-1.jpg";
-        product1.productIsStock = false;
-        product1.StockPieces = 100;
+        Product? urun = urunler.Where(m => m.productId == id).FirstOrDefault(); 
   
         
-        return View(product1);
+        return View(urun);
         }
 
         public ActionResult Update(){
